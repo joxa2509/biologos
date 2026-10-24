@@ -1,0 +1,931 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#173d2b" />
+    <meta
+      name="description"
+      content="Учебный проект о морфологии палочковидных бактерий и спирохет под микроскопом."
+    />
+    <title>Палочковидные бактерии и спирохеты</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-progress" aria-hidden="true">
+      <span id="progress"></span>
+    </div>
+    <header class="header">
+      <div class="container header__inner">
+        <a class="logo" href="#home" aria-label="На главную"
+          ><span class="logo__leaf">✦</span> МИКРОМИР</a
+        >
+        <button
+          class="nav-toggle"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav">
+          <a href="#about">О теме</a>
+          <a href="#bacilli">Палочки</a>
+          <a href="#spirochetes">Спирохеты</a>
+          <a href="#microscopy">Микроскопия</a>
+          <a href="#experience">Наш опыт</a>
+          <a href="#report">Фотоотчёт</a>
+          <a href="#gallery">Галерея</a>
+          <a class="nav__cta" href="#conclusion">Итоги</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero__decor hero__decor--one"></div>
+        <div class="hero__decor hero__decor--two"></div>
+        <div class="container hero__grid">
+          <div class="hero__content" data-aos="fade-up" data-aos-duration="900">
+            <p class="eyebrow">
+              <span></span> Учебный исследовательский проект
+            </p>
+            <h1>Палочковидные бактерии <em>и спирохеты</em></h1>
+            <p class="hero__subtitle">Изучение морфологии под микроскопом</p>
+            <p class="hero__text">
+              Исследуем форму, размеры, расположение и особенности движения
+              микроорганизмов — от вытянутых бактериальных палочек до тонких
+              гибких спиралей.
+            </p>
+            <div class="hero__actions">
+              <a class="button button--primary" href="#about"
+                >Начать изучение <span>↗</span></a
+              >
+              <a class="button button--ghost" href="#gallery"
+                >Смотреть фотогалерею</a
+              >
+            </div>
+            <div class="hero__facts">
+              <div>
+                <strong>02</strong><span>морфологические<br />группы</span>
+              </div>
+              <div>
+                <strong>14+</strong><span>ключевых<br />тем проекта</span>
+              </div>
+              <div>
+                <strong>1</strong><span>цель — увидеть<br />и сравнить</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hero__visual"
+            data-aos="zoom-in"
+            data-aos-delay="180"
+            data-aos-duration="1000"
+          >
+            <div class="hero__image-frame">
+              <div class="photo-placeholder hero__photo">
+                <img src="images/lab-01-group-microscope.jpg" alt="Студенты в лабораторных халатах собрались у микроскопа на занятии" width="1800" height="1350" data-zoom="hero" fetchpriority="high" />
+              </div>
+            </div>
+            <div class="floating-note floating-note--top">
+              <span class="dot dot--green"></span> Морфология
+            </div>
+            <div class="floating-note floating-note--bottom">
+              <span class="dot dot--gold"></span> Микроскопия
+            </div>
+            <div class="hero__orbit"></div>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#about"><span></span> Листайте вниз</a>
+      </section>
+
+      <section class="section intro" id="about">
+        <div class="container">
+          <div class="section-heading" data-aos="fade-up">
+            <p class="eyebrow">01 / Введение</p>
+            <h2>Что такое <em>морфология?</em></h2>
+            <p>
+              Морфология бактерий — описание формы, размеров и внешних
+              особенностей клеток. Она помогает систематизировать наблюдения,
+              сравнивать препараты и выбирать дальнейшие методы исследования.
+            </p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card" data-aos="fade-up" data-aos-delay="0">
+              <span class="feature-card__icon">⌗</span>
+              <h3>Форма</h3>
+              <p>
+                Палочковидная, шаровидная, изогнутая или спиралевидная форма
+                клетки.
+              </p>
+              <span class="feature-card__index">01</span>
+            </article>
+            <article
+              class="feature-card"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <span class="feature-card__icon">↔</span>
+              <h3>Размеры</h3>
+              <p>
+                Длина и ширина клетки, которые обычно выражают в микрометрах.
+              </p>
+              <span class="feature-card__index">02</span>
+            </article>
+            <article
+              class="feature-card"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <span class="feature-card__icon">⠿</span>
+              <h3>Расположение</h3>
+              <p>
+                Клетки могут быть одиночными, парными, цепочечными или
+                собираться в группы.
+              </p>
+              <span class="feature-card__index">03</span>
+            </article>
+            <article
+              class="feature-card"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <span class="feature-card__icon">◎</span>
+              <h3>Подвижность</h3>
+              <p>
+                Направленное движение и характер изгибов можно оценивать
+                подходящими методами.
+              </p>
+              <span class="feature-card__index">04</span>
+            </article>
+          </div>
+          <div class="notice" data-aos="fade-up">
+            <span class="notice__icon">i</span>
+            <p>
+              <strong>Важно:</strong> внешний вид зависит от возраста культуры,
+              подготовки препарата, окраски и качества оптики. Одной формы
+              обычно недостаточно, чтобы точно определить вид бактерии.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dark-section" id="bacilli">
+        <div class="container split-layout">
+          <div class="split-layout__content" data-aos="fade-right">
+            <p class="eyebrow eyebrow--light">02 / Группа первая</p>
+            <h2>Палочковидные <em>бактерии</em></h2>
+            <p class="section-lead">
+              Это бактерии с вытянутой клеткой, длина которой обычно больше
+              ширины. Их называют палочками, но представители группы могут
+              заметно различаться по размеру, очертаниям и свойствам.
+            </p>
+            <ul class="check-list">
+              <li>
+                <span>✓</span>
+                <div>
+                  <strong>Разная длина и контур</strong>
+                  <p>
+                    Встречаются короткие, длинные, тонкие и слегка изогнутые
+                    клетки.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span>✓</span>
+                <div>
+                  <strong>Разное расположение</strong>
+                  <p>
+                    Поодиночке, попарно или цепочками после последовательных
+                    делений.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span>✓</span>
+                <div>
+                  <strong>Споры у некоторых видов</strong>
+                  <p>
+                    Некоторые палочковидные бактерии образуют эндоспоры —
+                    устойчивые структуры.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span>✓</span>
+                <div>
+                  <strong>Подвижность отличается</strong>
+                  <p>
+                    Одни представители способны двигаться, другие остаются
+                    неподвижными.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="split-layout__media"
+            data-aos="fade-left"
+            data-aos-delay="150"
+          >
+            <div class="photo-placeholder photo-placeholder--large photo-placeholder--scheme">
+              <img src="images/schema-bacilli.svg" alt="Схема: палочковидные бактерии разной длины, у некоторых видны жгутики" width="800" height="600" loading="lazy" decoding="async" />
+            </div>
+            <div class="media-caption">
+              <span class="caption-line"></span
+              ><span>Палочковидные формы · схематичное изображение</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section forms-section">
+        <div class="container">
+          <div
+            class="section-heading section-heading--center"
+            data-aos="fade-up"
+          >
+            <p class="eyebrow">03 / Варианты формы</p>
+            <h2>Палочки бывают <em>разными</em></h2>
+            <p>
+              При описании препарата фиксируют именно видимые признаки, не делая
+              вывод о виде только по очертаниям клетки.
+            </p>
+          </div>
+          <div class="gallery-grid gallery-grid--three">
+            <article class="image-card" data-aos="fade-up">
+              <div class="photo-placeholder photo-placeholder--card photo-placeholder--scheme">
+                <img src="images/schema-short-rods.svg" alt="Схема: короткие палочки, одиночные и парные" width="800" height="600" loading="lazy" decoding="async" />
+              </div>
+              <div class="image-card__body">
+                <span>ТИП 01</span>
+                <h3>Короткие формы</h3>
+                <p>
+                  Могут по очертаниям напоминать овальные клетки; важно
+                  учитывать пропорции длины и ширины.
+                </p>
+              </div>
+            </article>
+            <article class="image-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="photo-placeholder photo-placeholder--card photo-placeholder--scheme">
+                <img src="images/schema-chains.svg" alt="Схема: палочки, соединённые в цепочки" width="800" height="600" loading="lazy" decoding="async" />
+              </div>
+              <div class="image-card__body">
+                <span>ТИП 02</span>
+                <h3>Цепочечное расположение</h3>
+                <p>
+                  Клетки остаются соединёнными после деления, образуя заметные
+                  последовательности.
+                </p>
+              </div>
+            </article>
+            <article class="image-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="photo-placeholder photo-placeholder--card photo-placeholder--scheme">
+                <img src="images/schema-spores.svg" alt="Схема: палочки с эндоспорами внутри клетки" width="800" height="600" loading="lazy" decoding="async" />
+              </div>
+              <div class="image-card__body">
+                <span>ТИП 03</span>
+                <h3>Спорообразующие формы</h3>
+                <p>
+                  У некоторых бактерий можно выявить эндоспоры с помощью
+                  специальных методов окраски.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section spiro-section" id="spirochetes">
+        <div class="container split-layout split-layout--reverse">
+          <div class="split-layout__media" data-aos="fade-right">
+            <div class="photo-placeholder photo-placeholder--large photo-placeholder--spiro photo-placeholder--scheme">
+              <img src="images/schema-spirochetes.svg" alt="Схема: спирохеты — тонкие гибкие спирали" width="800" height="600" loading="lazy" decoding="async" />
+            </div>
+            <div class="media-caption">
+              <span class="caption-line"></span
+              ><span>Спирохеты · схема тонких гибких спиралей</span>
+            </div>
+          </div>
+          <div
+            class="split-layout__content"
+            data-aos="fade-left"
+            data-aos-delay="150"
+          >
+            <p class="eyebrow">04 / Группа вторая</p>
+            <h2>Спирохеты — гибкие <em>спирали</em></h2>
+            <p class="section-lead">
+              Спирохеты — тонкие, гибкие, спиралевидные бактерии. Их клетка
+              может изгибаться и менять положение во время движения. Из-за малой
+              толщины такие микроорганизмы бывает трудно рассмотреть обычной
+              световой микроскопией.
+            </p>
+            <ul class="check-list check-list--dark">
+              <li>
+                <span>✓</span>
+                <div>
+                  <strong>Винтообразная форма</strong>
+                  <p>Вытянутое тело имеет несколько изгибов или завитков.</p>
+                </div>
+              </li>
+              <li>
+                <span>✓</span>
+                <div>
+                  <strong>Выраженная гибкость</strong>
+                  <p>
+                    Клетка способна совершать изгибательные и вращательные
+                    движения.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span>✓</span>
+                <div>
+                  <strong>Особый механизм движения</strong>
+                  <p>
+                    Движение связано с внутренними жгутиковыми структурами под
+                    наружной оболочкой.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span>✓</span>
+                <div>
+                  <strong>Требуется подходящий метод</strong>
+                  <p>
+                    Для наблюдения тонких клеток могут применяться специальные
+                    оптические режимы.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section comparison" id="comparison">
+        <div class="container">
+          <div class="section-heading" data-aos="fade-up">
+            <p class="eyebrow">05 / Сравнение</p>
+            <h2>Две группы — <em>разные признаки</em></h2>
+            <p>
+              Сравнивать бактерии лучше по нескольким характеристикам
+              одновременно.
+            </p>
+          </div>
+          <div class="comparison-table-wrap" data-aos="fade-up">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Признак</th>
+                  <th>Палочковидные бактерии</th>
+                  <th>Спирохеты</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Форма</th>
+                  <td>Вытянутая, обычно прямая палочка</td>
+                  <td>Тонкая гибкая спираль</td>
+                </tr>
+                <tr>
+                  <th>Гибкость клетки</th>
+                  <td>Чаще относительно жёсткая</td>
+                  <td>Выраженная гибкость</td>
+                </tr>
+                <tr>
+                  <th>Движение</th>
+                  <td>Зависит от вида; возможно движение с помощью жгутиков</td>
+                  <td>Характерные вращательные и изгибательные движения</td>
+                </tr>
+                <tr>
+                  <th>Наблюдение</th>
+                  <td>Часто доступны световой микроскопии после окраски</td>
+                  <td>
+                    Тонкие клетки могут требовать тёмного поля или специальных
+                    методов
+                  </td>
+                </tr>
+                <tr>
+                  <th>Что описывать</th>
+                  <td>Длину, ширину, концы, цепочки, споры</td>
+                  <td>Толщину, завитки, гибкость и движение</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="comparison-note" data-aos="fade-up">
+            <span>✳</span>
+            <p>
+              Микроскопия помогает описать форму, но точное определение вида
+              часто требует дополнительных лабораторных исследований.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dark-section microscopy" id="microscopy">
+        <div class="container">
+          <div
+            class="section-heading section-heading--light"
+            data-aos="fade-up"
+          >
+            <p class="eyebrow eyebrow--light">06 / Практическое изучение</p>
+            <h2>Как изучают морфологию <em>под микроскопом</em></h2>
+            <p>
+              Для учебного наблюдения используют готовые фиксированные препараты
+              или образцы, подготовленные преподавателем.
+            </p>
+          </div>
+          <div class="steps-grid">
+            <article class="step-card" data-aos="fade-up">
+              <span>01</span>
+              <h3>Подготовка</h3>
+              <p>
+                Проверить чистоту оптики и правильность размещения готового
+                препарата.
+              </p>
+            </article>
+            <article class="step-card" data-aos="fade-up" data-aos-delay="80">
+              <span>02</span>
+              <h3>Поиск участка</h3>
+              <p>
+                Начать с малого увеличения, чтобы найти подходящую область
+                препарата.
+              </p>
+            </article>
+            <article class="step-card" data-aos="fade-up" data-aos-delay="160">
+              <span>03</span>
+              <h3>Настройка</h3>
+              <p>
+                Перейти к нужному увеличению и аккуратно настроить резкость
+                изображения.
+              </p>
+            </article>
+            <article class="step-card" data-aos="fade-up" data-aos-delay="240">
+              <span>04</span>
+              <h3>Описание</h3>
+              <p>
+                Записать форму, размеры, расположение клеток и особенности
+                окраски.
+              </p>
+            </article>
+          </div>
+          <div class="microscopy-bottom">
+            <div
+              class="photo-placeholder photo-placeholder--wide"
+              data-aos="zoom-in"
+            >
+              <img src="images/lab-06-microscope.jpg" alt="Бинокулярный учебный микроскоп рядом с колбой на лабораторном столе" width="1800" height="1350" data-zoom="single" loading="lazy" decoding="async" />
+            </div>
+            <div class="microscopy-copy" data-aos="fade-left">
+              <h3>Что фиксировать в наблюдении?</h3>
+              <p>
+                Запишите увеличение, метод окраски, форму клеток, их
+                расположение и то, насколько чётко различимы контуры. Если
+                используется микрофотография, по возможности укажите масштабную
+                линейку и источник.
+              </p>
+              <a href="#gallery" class="text-link"
+                >Перейти к фотогалерее <span>↗</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section methods">
+        <div class="container">
+          <div
+            class="section-heading section-heading--center"
+            data-aos="fade-up"
+          >
+            <p class="eyebrow">07 / Методы визуализации</p>
+            <h2>Как увидеть то, что <em>почти прозрачно</em></h2>
+            <p>
+              Метод выбирают в зависимости от объекта, качества препарата и цели
+              наблюдения.
+            </p>
+          </div>
+          <div class="method-grid">
+            <article class="method-card" data-aos="fade-up">
+              <div class="method-card__number">01</div>
+              <h3>Окраска по Граму</h3>
+              <p>
+                Помогает разделять бактерии на грамположительные и
+                грамотрицательные по свойствам клеточной оболочки.
+              </p>
+            </article>
+            <article class="method-card" data-aos="fade-up" data-aos-delay="70">
+              <div class="method-card__number">02</div>
+              <h3>Специальные окраски</h3>
+              <p>
+                Могут выявлять отдельные структуры, например эндоспоры, если они
+                присутствуют.
+              </p>
+            </article>
+            <article
+              class="method-card"
+              data-aos="fade-up"
+              data-aos-delay="140"
+            >
+              <div class="method-card__number">03</div>
+              <h3>Фазовый контраст</h3>
+              <p>
+                Повышает контраст прозрачных клеток и может помочь наблюдать
+                движение.
+              </p>
+            </article>
+            <article
+              class="method-card"
+              data-aos="fade-up"
+              data-aos-delay="210"
+            >
+              <div class="method-card__number">04</div>
+              <h3>Тёмное поле</h3>
+              <p>
+                Позволяет видеть тонкие объекты на тёмном фоне; используется для
+                некоторых спирохет.
+              </p>
+            </article>
+            <article
+              class="method-card"
+              data-aos="fade-up"
+              data-aos-delay="280"
+            >
+              <div class="method-card__number">05</div>
+              <h3>Электронная микроскопия</h3>
+              <p>
+                Обеспечивает высокое разрешение и применяется для изучения
+                тонкого строения клеток.
+              </p>
+            </article>
+            <article
+              class="method-card method-card--accent"
+              data-aos="fade-up"
+              data-aos-delay="350"
+            >
+              <div class="method-card__number">!</div>
+              <h3>Помните</h3>
+              <p>
+                Один цвет или форма не являются достаточным основанием для
+                определения вида бактерии.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section experience-section" id="experience">
+        <div class="container">
+          <div class="section-heading" data-aos="fade-up">
+            <p class="eyebrow">08 / Практическая часть</p>
+            <h2>Наш <em>опыт</em></h2>
+            <p>
+              В ходе изучения палочковидных бактерий и спирохет мы знакомимся с
+              особенностями их морфологии, учимся наблюдать микроорганизмы под
+              микроскопом и сравнивать их основные признаки.
+            </p>
+          </div>
+
+          <div class="experience-intro" data-aos="fade-up">
+            <div class="experience-intro__mark">✳</div>
+            <div>
+              <h3>От наблюдения к выводу</h3>
+              <p>
+                Наша задача — изучить форму клеток, их расположение, особенности
+                строения и видимые различия. Полученные наблюдения помогают
+                лучше понять разнообразие бактерий и значение микроскопического
+                исследования.
+              </p>
+            </div>
+          </div>
+
+          <div class="experience-grid">
+            <article class="experience-card" data-aos="fade-up">
+              <div class="photo-placeholder experience-card__photo">
+                <img src="images/lab-04-preparation.jpg" alt="Подготовка к работе: колба, пипетка и микроскоп на столе" width="1800" height="1350" data-zoom="report" loading="lazy" decoding="async" />
+              </div>
+
+              <div class="experience-card__body">
+                <span class="experience-card__tag">ЭТАП 01</span>
+                <h3>Подготовка к исследованию</h3>
+                <p>
+                  Перед началом работы мы знакомимся с устройством микроскопа,
+                  подготавливаем рабочее место и изучаем правила безопасного
+                  обращения с лабораторным оборудованием. Для наблюдения
+                  используются готовые учебные препараты.
+                </p>
+                <div class="experience-card__result">
+                  <strong>Что изучаем</strong>
+                  <span>Оборудование, препараты и цель исследования.</span>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="experience-card"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="photo-placeholder experience-card__photo">
+                <img src="images/lab-05-observing.jpg" alt="Студентка наблюдает препарат в микроскоп" width="1800" height="1350" data-zoom="report" loading="lazy" decoding="async" />
+              </div>
+
+              <div class="experience-card__body">
+                <span class="experience-card__tag">ЭТАП 02</span>
+                <h3>Микроскопическое изучение</h3>
+                <p>
+                  Во время наблюдения мы обращаем внимание на форму, контуры и
+                  расположение бактериальных клеток. Палочковидные бактерии
+                  имеют вытянутую форму, а спирохеты отличаются тонким
+                  спиралевидным телом. Видимость деталей зависит от препарата и
+                  метода микроскопии.
+                </p>
+                <div class="experience-card__result">
+                  <strong>Что изучаем</strong>
+                  <span
+                    >Форму клеток, изображение и увеличение микроскопа.</span
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="experience-card"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="photo-placeholder experience-card__photo">
+                <img src="images/lab-08-group-observing.jpg" alt="Студенты наблюдают препарат по очереди" width="1800" height="1350" data-zoom="report" loading="lazy" decoding="async" />
+              </div>
+
+              <div class="experience-card__body">
+                <span class="experience-card__tag">ЭТАП 03</span>
+                <h3>Сравнение бактерий</h3>
+                <p>
+                  Палочковидные бактерии могут располагаться одиночно, парами
+                  или цепочками. Спирохеты имеют характерную извитую форму,
+                  которая связана с особенностями их движения. Сравнивая
+                  изображения, мы выделяем общие признаки и основные различия
+                  между группами.
+                </p>
+                <div class="experience-card__result">
+                  <strong>Что изучаем</strong>
+                  <span
+                    >Форму, расположение, окраску и отличительные
+                    признаки.</span
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="experience-card"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="photo-placeholder experience-card__photo">
+                <img src="images/lab-07-observing-2.jpg" alt="Изучение препарата под микроскопом" width="1800" height="1350" data-zoom="report" loading="lazy" decoding="async" />
+              </div>
+
+              <div class="experience-card__body">
+                <span class="experience-card__tag">ЭТАП 04</span>
+                <h3>Анализ и выводы</h3>
+                <p>
+                  После наблюдения мы записываем результаты, описываем увиденные
+                  особенности и сопоставляем их с учебными материалами.
+                  Морфология позволяет предварительно охарактеризовать
+                  микроорганизмы, однако для точного определения вида необходимы
+                  дополнительные методы исследования.
+                </p>
+                <div class="experience-card__result">
+                  <strong>Что изучаем</strong>
+                  <span
+                    >Результаты наблюдений, различия и итоговые выводы.</span
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <p class="experience-footnote" data-aos="fade-up">
+            Все снимки сделаны во время лабораторной работы с микроскопом.
+          </p>
+        </div>
+      </section>
+
+      <section class="section report-section" id="report">
+        <div class="container">
+          <div class="section-heading" data-aos="fade-up">
+            <p class="eyebrow">09 / Фотоотчёт</p>
+            <h2>Как проходила <em>работа</em></h2>
+            <p>
+              Снимки из лаборатории: подготовка, работа с микроскопом и
+              наблюдение препаратов. Нажмите на фото, чтобы открыть его крупнее.
+            </p>
+          </div>
+          <div class="report-grid">
+          <figure class="report-item report-item--big" data-aos="zoom-in" data-aos-delay="0">
+            <img src="images/lab-01-group-microscope.jpg" alt="Студенты в лабораторных халатах собрались вокруг микроскопа" width="1800" height="1350" data-zoom="report" loading="lazy" decoding="async" />
+            <figcaption>Вся группа у микроскопа</figcaption>
+          </figure>
+          <figure class="report-item" data-aos="zoom-in" data-aos-delay="60">
+            <img src="images/lab-02-sample-prep.jpg" alt="Студентка работает с колбой и пипеткой" width="1800" height="1350" data-zoom="report" loading="lazy" decoding="async" />
+            <figcaption>Работа с пробой</figcaption>
+          </figure>
+          <figure class="report-item" data-aos="zoom-in" data-aos-delay="120">
+            <img src="images/lab-03-pipette.jpg" alt="Колба, пипетка, линейка и микроскоп на лабораторном столе" width="1800" height="1350" data-zoom="report" loading="lazy" decoding="async" />
+            <figcaption>Рабочее место</figcaption>
+          </figure>
+          <figure class="report-item report-item--wide" data-aos="zoom-in" data-aos-delay="180">
+            <img src="images/lab-04-preparation.jpg" alt="Подготовка препарата рядом с микроскопом" width="1800" height="1350" data-zoom="report" loading="lazy" decoding="async" />
+            <figcaption>Подготовка препарата к наблюдению</figcaption>
+          </figure>
+          <figure class="report-item" data-aos="zoom-in" data-aos-delay="0">
+            <img src="images/lab-05-observing.jpg" alt="Студентка смотрит в окуляры микроскопа" width="1800" height="1350" data-zoom="report" loading="lazy" decoding="async" />
+            <figcaption>Наблюдение в микроскоп</figcaption>
+          </figure>
+          <figure class="report-item" data-aos="zoom-in" data-aos-delay="60">
+            <img src="images/lab-06-microscope.jpg" alt="Бинокулярный микроскоп на лабораторном столе" width="1800" height="1350" data-zoom="report" loading="lazy" decoding="async" />
+            <figcaption>Бинокулярный микроскоп</figcaption>
+          </figure>
+          <figure class="report-item report-item--big" data-aos="zoom-in" data-aos-delay="120">
+            <img src="images/lab-07-observing-2.jpg" alt="Студентка изучает препарат под микроскопом" width="1800" height="1350" data-zoom="report" loading="lazy" decoding="async" />
+            <figcaption>Изучение препарата</figcaption>
+          </figure>
+          <figure class="report-item report-item--wide" data-aos="zoom-in" data-aos-delay="180">
+            <img src="images/lab-08-group-observing.jpg" alt="Студенты наблюдают за работой с микроскопом" width="1800" height="1350" data-zoom="report" loading="lazy" decoding="async" />
+            <figcaption>Работа в учебной аудитории</figcaption>
+          </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="gallery">
+        <div class="container">
+          <div class="section-heading" data-aos="fade-up">
+            <p class="eyebrow">10 / Визуальный материал</p>
+            <h2>Галерея <em>наблюдений</em></h2>
+            <p>
+              Снимки поля зрения микроскопа, сделанные через окуляр. Нажмите на
+              фото, чтобы рассмотреть его подробнее.
+            </p>
+          </div>
+          <div class="gallery-grid gallery-grid--micro">
+            <article class="gallery-item" data-aos="zoom-in" data-aos-delay="0">
+              <div class="photo-placeholder">
+                <img src="images/micro-01-red.jpg" alt="Поле зрения микроскопа: вытянутые клетки в красноватом свете" width="1134" height="1134" data-zoom="micro" loading="lazy" decoding="async" />
+              </div>
+              <div class="gallery-item__caption">
+                <strong>Поле зрения · вид 1</strong><span>Клетки растительной ткани, красноватая подсветка</span>
+              </div>
+            </article>
+            <article class="gallery-item" data-aos="zoom-in" data-aos-delay="80">
+              <div class="photo-placeholder">
+                <img src="images/micro-02-yellow-cells.jpg" alt="Поле зрения микроскопа: клетки с чёткими границами" width="996" height="996" data-zoom="micro" loading="lazy" decoding="async" />
+              </div>
+              <div class="gallery-item__caption">
+                <strong>Поле зрения · вид 2</strong><span>Клетки с хорошо видимыми границами</span>
+              </div>
+            </article>
+            <article class="gallery-item" data-aos="zoom-in" data-aos-delay="160">
+              <div class="photo-placeholder">
+                <img src="images/micro-03-yellow-field.jpg" alt="Поле зрения микроскопа: вытянутые клетки с чёткими контурами" width="1034" height="1034" data-zoom="micro" loading="lazy" decoding="async" />
+              </div>
+              <div class="gallery-item__caption">
+                <strong>Поле зрения · вид 3</strong><span>Вытянутые клетки с чёткими контурами</span>
+              </div>
+            </article>
+            <article class="gallery-item" data-aos="zoom-in" data-aos-delay="240">
+              <div class="photo-placeholder">
+                <img src="images/micro-04-yellow-film.jpg" alt="Поле зрения микроскопа: участок препарата с включениями" width="1026" height="1026" data-zoom="micro" loading="lazy" decoding="async" />
+              </div>
+              <div class="gallery-item__caption">
+                <strong>Поле зрения · вид 4</strong><span>Участок препарата с включениями</span>
+              </div>
+            </article>
+          </div>
+          <div class="notice" data-aos="fade-up">
+            <span class="notice__icon">i</span>
+            <p>
+              <strong>Обратите внимание:</strong> на этих микрофотографиях видны
+              клетки растительной ткани. Изображения бактерий выше — схемы,
+              нарисованные для наглядности; они не являются снимками.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section observation" id="observation">
+        <div class="container observation__grid">
+          <div data-aos="fade-right">
+            <p class="eyebrow">11 / Карточка наблюдения</p>
+            <h2>Описывайте <em>точно</em></h2>
+            <p>
+              Сначала запишите то, что действительно видно на изображении, а уже
+              затем формулируйте вывод. Это помогает отделять наблюдение от
+              предположения.
+            </p>
+            <div class="observation-list">
+              <div><span>01</span>Форма и контуры клетки</div>
+              <div><span>02</span>Расположение и размеры</div>
+              <div><span>03</span>Окраска и метод наблюдения</div>
+              <div><span>04</span>Увеличение и источник</div>
+            </div>
+          </div>
+          <div class="observation-form" data-aos="fade-left">
+            <h3>Мои заметки</h3>
+            <label
+              >Форма клеток<input
+                type="text"
+                placeholder="Например, вытянутые палочки"
+            /></label>
+            <label
+              >Расположение<input
+                type="text"
+                placeholder="Одиночно, парами, цепочками..."
+            /></label>
+            <label
+              >Метод / окраска<input
+                type="text"
+                placeholder="Укажите, если известно"
+            /></label>
+            <label
+              >Увеличение<input type="text" placeholder="Например, ×1000"
+            /></label>
+            <label
+              >Краткий вывод<textarea
+                rows="3"
+                placeholder="Опишите основные наблюдения"
+              ></textarea>
+            </label>
+            <button class="button button--primary" id="copyNotes" type="button">
+              Скопировать заметки <span>↗</span>
+            </button>
+            <p class="form-status" id="formStatus" aria-live="polite"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section safety">
+        <div class="container safety__inner" data-aos="fade-up">
+          <div class="safety__icon">✳</div>
+          <div>
+            <p class="eyebrow">12 / Безопасность</p>
+            <h2>Наблюдать — <em>безопасно</em></h2>
+            <p>
+              Не выращивайте неизвестные микроорганизмы и не открывайте ёмкости
+              с неизвестными культурами. Для учебной работы используйте готовые
+              препараты и материалы, предоставленные преподавателем. Соблюдайте
+              правила лаборатории и мойте руки после занятия.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section conclusion" id="conclusion">
+        <div class="container conclusion__inner" data-aos="zoom-in">
+          <p class="eyebrow eyebrow--light">13 / Итоги исследования</p>
+          <h2>Форма — это начало <em>понимания</em></h2>
+          <div class="conclusion__grid">
+            <p>
+              Палочковидные бактерии имеют вытянутую форму и отличаются
+              размерами, расположением и дополнительными структурами.
+            </p>
+            <p>
+              Спирохеты — тонкие гибкие спирали, характерная подвижность которых
+              связана с особенностями строения.
+            </p>
+            <p>
+              Микроскопия, окраски и корректное описание помогают сравнивать
+              образцы, однако точная идентификация часто требует дополнительных
+              методов.
+            </p>
+          </div>
+          <a href="#home" class="button button--light">Вернуться наверх ↑</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <a class="logo" href="#home"
+          ><span class="logo__leaf">✦</span> МИКРОМИР</a
+        >
+        <p>Учебный проект · Морфология бактерий</p>
+        <a href="#home" class="footer__top">Наверх ↑</a>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
